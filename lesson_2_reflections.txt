@@ -1,0 +1,9 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+While initializing a repository, a git config folder will get created with a name .git 
+Which will be used for tracking the commits and files. Auto commit won't happen.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area will have the files that needs to be committed. Git will keep track of the files once a commit is done.
+Working directory files won't get tracked by git.
