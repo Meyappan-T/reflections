@@ -1,0 +1,4 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+If there are multiple persons working on a project, then its better to maintain a shared repository than working local.
+
