@@ -1,4 +1,41 @@
 When would you want to use a remote repository rather than keeping all your work local?
 
-If there are multiple persons working on a project, then its better to maintain a shared repository than working local.
+	If there are multiple persons working on a project, then its better to maintain a shared repository than working local.
 
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+	This will make us lose some changes made by us in local master.So, before pull we should be careful that all our local changes are incorporated.
+
+Describe the differences between forks, clones, and branches.  When would you
+use one instead of another?
+
+    Fork - Copying a repository within GitHub
+	Clone - Copy repositories within local or with local and remote
+	Branch - a new functionality being added within a repository
+
+What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+    we can use it even if we are off-line, without merging origin/master and local master branch.
+
+How would you collaborate without using Git or GitHub?  What would be easier,
+and what would be harder?
+
+    Through mail but it would be harder to track. somewhat easier way is to maintain a tracker in a shared folder and collaborate with the team members.
+
+When would you want to make changes in a separate branch rather than directly in
+master?  What benefits does each approach have?
+
+    Master is the official version of a application, I'll introduce a new separate branch when I'm going to start enhancing the application 
+	which I can't merge until it works and reviewed by someone. if I found any issues in master, then I'll fix in master itself.
+
+
+Commands:
+
+git remote  				|    Show all remote locations for the repository
+git remote add origin URL	|    Add a new remote location for the repository. Origin is the default name to use when you create only one remote location. 
+                                 URL should be the https URL to the git-hub repository.
+git remove -v  				|    Outputs the remote locations with verbose information (fetch and push URLs)
+git push origin master  	|    Push the master branch to the remote location origin.
+git pull origin master  	|    Get the master branch from the remote location origin. Similar to git fetch origin + git merge master origin/master
+git fetch origin  			|    Get the changes from the remote location into the (hidden?) origin/master branch
